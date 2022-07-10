@@ -21,8 +21,16 @@
 2. Requirements
 -------------------------
 
-Tunnelblick for mac v.x.x
-pip3 install progress
+app:
+Tunnelblick
+
+pip3:
+progress
+beautifulsoup4==4.11.1
+
+Brew:
+proxychains-ng
+tor
 
 -------------------------
 
