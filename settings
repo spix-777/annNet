@@ -1,7 +1,7 @@
 # --- SETTINGS ---
 # wifi = en0
 # eth = en4
-Setting = en4
+Setting = en0
 sleep = 1
 username = username
 password = password

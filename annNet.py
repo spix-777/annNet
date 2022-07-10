@@ -1,6 +1,6 @@
 #!/usr/local/bin/python3
 
-import os, time, subprocess, random, sys
+import os, time, subprocess, random, sys, cursor
 from progress.bar import Bar
 
 class nameZ:
@@ -97,7 +97,8 @@ if __name__ == '__main__':
 |                    annNet                           |
 |                 version 0.121                       |
 -------------------------------------------------------''')
-    os.system('echo')
+    cursor.hide()
+    print()
     bar = Bar('Processing', max=4)
     for i in range(1):
         nameZ.fake()
@@ -114,3 +115,4 @@ if __name__ == '__main__':
     print()
     SH()
     print()
+    cursor.show()
