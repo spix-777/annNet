@@ -25,7 +25,7 @@ app:
 Tunnelblick.
 
 pip3:
-progress.
+progress\n
 beautifulsoup4==4.11.1.
 
 Brew:
