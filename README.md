@@ -22,15 +22,15 @@
 -------------------------
 
 app:
-Tunnelblick.
+Tunnelblick
 
 pip3:
-progress\n
-beautifulsoup4==4.11.1.
+progress,
+beautifulsoup4
 
 Brew:
-proxychains-ng.
-tor.
+proxychains-ng,
+tor
 
 -------------------------
 
