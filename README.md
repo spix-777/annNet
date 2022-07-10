@@ -13,11 +13,11 @@
 -------------------------
 
 
-# 1. Installation
+# Installation
 
 -------------------------
 
-# 2. Requirements
+# Requirements
 
 app:
 Tunnelblick
@@ -33,14 +33,14 @@ tor
 -------------------------
 
 
-# 3. Usage
+# Usage
 
 
 
 -------------------------
 
 
-# 4. Tested platforms
+# Tested platforms
 
   * macOS 12.4
 -------------------------
