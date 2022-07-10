@@ -1,5 +1,5 @@
 # annNet
-# Anonymity in Net , random MAC address, host/local/computer name and VPN for macOS
+# Anonymity in Net , random MAC address, host/local/computer name and VPN with TOR for macOS
 
 
 ... Notes ...
