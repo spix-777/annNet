@@ -29,6 +29,7 @@ beautifulsoup4
 Brew:
 proxychains-ng,
 tor
+spoof-mac
 
 -------------------------
 
