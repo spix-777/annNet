@@ -25,6 +25,7 @@ Tunnelblick
 pip3:
 progress,
 beautifulsoup4
+cursor
 
 Brew:
 proxychains-ng,
