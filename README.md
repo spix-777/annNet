@@ -6,8 +6,6 @@
 
 We use ProtonVPN with OpenVPN / IKEv2
 
-------------
-
 -------------------------
 1. Installation
 2. Requirements
