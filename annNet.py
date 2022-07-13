@@ -8,29 +8,34 @@ class nameZ:
          faKename = []
          with open('data/lang', 'r') as target:
              faKename = target.readlines()
-             os.system('sudo scutil --set HostName '+random.choice(faKename))
-             os.system('sudo scutil --set LocalHostName '+random.choice(faKename))
-             os.system('sudo scutil --set ComputerName '+random.choice(faKename))
+             x = subprocess.run(['sudo', 'scutil', '--set', 'HostName', random.choice(faKename)], capture_output=True)
+             x = subprocess.run(['sudo', 'scutil', '--set', 'LocalHostName', random.choice(faKename)], capture_output=True)
+             x = subprocess.run(['sudo', 'scutil', '--set', 'ComputerName', random.choice(faKename)], capture_output=True)
 
 class randomLIST:
     def ranVPN():
         if os.path.exists("data/randomLIST.py"):
-            subprocess.Popen(['python3 data/randomLIST.py'], shell=True)
+            x = subprocess.run(['python3', 'data/randomLIST.py'], capture_output=True)
         else:
             print("The file does not exist")
             sys.exit(1)
 
 class iFconFig:
     def ifCONFIG(Setting):
-        subprocess.Popen(['sudo ifconfig '+Setting+' down'], shell=True)
+        x = subprocess.run(['sudo', 'ifconfig', Setting, 'down'], capture_output=True)
         time.sleep(sleep)
-        subprocess.Popen(['sudo ifconfig '+Setting+' up'], shell=True)
+        x = subprocess.run(['sudo', 'ifconfig', Setting, 'up'], capture_output=True)
         time.sleep(sleep)
 
 class spoofMac:
     def spoof_NeTworK(Setting):
-        subprocess.Popen(['sudo spoof-mac randomize '+Setting], shell=True)
+        x = subprocess.run(['sudo', 'spoof-mac', 'randomize', Setting], capture_output=True)
         time.sleep(sleep)
+
+class tOr:
+    def  tOrserVice():
+        x = subprocess.run(['brew', 'services', 'start', 'tor'], capture_output=True)
+
 
 # --- SETTINGS ---
 # Settings in a file "settings"
@@ -99,7 +104,7 @@ if __name__ == '__main__':
 -------------------------------------------------------''')
     cursor.hide()
     print()
-    bar = Bar('Processing', max=4)
+    bar = Bar('Processing', max=5)
     for i in range(1):
         nameZ.fake()
         bar.next()
@@ -108,6 +113,8 @@ if __name__ == '__main__':
         iFconFig.ifCONFIG(Setting)
         bar.next()
         spoofMac.spoof_NeTworK(Setting)
+        bar.next()
+        tOr.tOrserVice()
         bar.next()
         time.sleep(0.6)
         bar.finish()
