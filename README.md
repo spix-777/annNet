@@ -2,8 +2,11 @@
 # Anonymity in Net , random MAC address, host/local/computer name and VPN with TOR for macOS
 
 
-... Notes ...
-.............
+--- NOTE ---
+
+We use ProtonVPN with OpenVPN / IKEv2
+
+------------
 
 -------------------------
 1. Installation
