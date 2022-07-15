@@ -2,8 +2,9 @@
 # Anonymity in Net , random MAC address, host/local/computer name and VPN with TOR for macOS
 
 
-... Notes ...
-.............
+--- NOTE ---
+
+We use ProtonVPN with OpenVPN / IKEv2
 
 -------------------------
 1. Installation
@@ -36,7 +37,8 @@ spoof-mac
 
 
 # Usage
-
+It's takes your mac and change it to random, it takes your VPN to random and services tor.
+OpenVPN / IKEv2 username/password go into settings
 
 
 -------------------------
