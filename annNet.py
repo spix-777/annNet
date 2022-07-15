@@ -104,7 +104,7 @@ if __name__ == '__main__':
 -------------------------------------------------------''')
     cursor.hide()
     print()
-    bar = Bar('Processing', max=5)
+    bar = Bar('   Processing', max=5)
     for i in range(1):
         nameZ.fake()
         bar.next()

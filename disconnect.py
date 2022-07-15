@@ -33,25 +33,15 @@ def settingS():
 
 Setting, sleep, username, password = settingS()
 
-
-#os.system('sudo pkill sh proton-run.sh')
 x = subprocess.run(['sudo', 'pkill', 'sh', 'proton-run.sh'], capture_output=True)
 time.sleep(1)
-#os.system('sudo pkill sh')
 x = subprocess.run(['sudo', 'pkill', 'sh'], capture_output=True)
-
 time.sleep(1)
-#os.system("sudo pkill -f 'Tunnelblick'")
 x = subprocess.run(['sudo', 'pkill', '-f', 'Tunnelblick'], capture_output=True)
-
 time.sleep(1)
-#os.system('sudo spoof-mac randomize '+Setting)
 x = subprocess.run(['sudo', 'spoof-mac', 'randomize', Setting], capture_output=True)
-
 time.sleep(1)
-#subprocess.Popen(['brew services stop tor'], shell=True)
 x = subprocess.run(['brew', 'services', 'stop', 'tor'], capture_output=True)
-
 time.sleep(1)
 try:
     os.remove('proton-run.sh')
