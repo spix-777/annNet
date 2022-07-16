@@ -25,12 +25,12 @@ Tunnelblick
 
 pip3:
 progress,
-beautifulsoup4
+beautifulsoup4,
 cursor
 
 Brew:
 proxychains-ng,
-tor
+tor,
 spoof-mac
 
 -------------------------
